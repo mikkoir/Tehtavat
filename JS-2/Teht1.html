@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 1</title>
+</head>
+<body>
+
+<script>
+  'use strict';
+  let kuha, minus, alam;
+  const min = 37;
+  kuha = prompt('Anna kuhan pituus senttimetreinä');
+
+
+  if (kuha>min){
+    document.write('<p>' + 'Hienoa! Sait helvetin ison kuhan.'+ '</p>');
+  }
+
+  else if(kuha<min)
+  {
+    alam = min - kuha;
+    document.write('<p>' + 'Kuhan on liian pieni. Heitä se takasi järveen. Sallitusta mitasta uuppuu ' + alam + 'cm.' + '</p>');
+  }
+
+
+</script>
+
+
+</body>
+</html>

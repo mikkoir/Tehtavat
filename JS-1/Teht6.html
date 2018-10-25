@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 6</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let leiv, naul, luod, summa, grammat;
+  let leivg, naulg, luodg;
+  const leivipaino = 8.512;
+  const naulapaino = 0.4256;
+  const luotipaino = 0.0133;
+  leiv = prompt('Anna leiviskät');
+  naul = prompt('Anna naulat');
+  luod = prompt('Anna luodit');
+
+  leivg = leiv * leivipaino;
+  naulg = naul * naulapaino;
+  luodg = luod * luotipaino;
+
+  summa = +leivg + +naulg + +luodg;
+  grammat = summa % 1 * 1000;
+
+  document.write('<p>' + 'Massa nykymitton mukaan:' + '</p>');
+  document.write('<p>' + Math.floor(summa) + ' kilogrammaa ja ' + grammat.toFixed(2) + ' grammaa' + '</p>');
+
+</script>
+</body>
+</html>

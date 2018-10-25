@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 4</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let lompsa, bussi, vah;
+  lompsa = prompt('Anna lompakossa oleva rahamäärä');
+  bussi = prompt('Anna bussilipun hinta');
+
+  if (bussi > lompsa) {
+    document.write('<p>' + 'Rahat eivät riitä bussilippuun' + '</p>');
+    document.write('<p>' + 'Lipun hinta = ' + bussi + '</p>');
+    document.write('<p>' + 'Lompakossa olevat rahat = ' + lompsa + '</p>');
+  }
+  else if (bussi<lompsa) {
+    vah = lompsa-bussi;
+    document.write('<p>' + 'Rahat riittivät lippuun. Hyvää matkaa! '+ 'Lompakossa rahaa ='+ vah + '</p>');
+  }
+
+</script>
+</body>
+</html>

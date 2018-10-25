@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 7</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let saldo, prosentti, tulo, pros, summa;
+  saldo = prompt('Anna tilin saldo');
+  prosentti = prompt('Anna korkoprosentti');
+
+  pros = prosentti / 100;
+  tulo = saldo * pros;
+  summa = +tulo + +saldo;
+
+  document.write('<p>' + 'Alkuperäinen saldo = ' + saldo + '</p>');
+  document.write('<p>' + 'Koron määrä = ' + tulo.toFixed(2) + '</p>');
+  document.write('<p>' + 'Kertynyt saldo = ' + summa.toFixed(2) + '</p>');
+</script>
+</body>
+</html>

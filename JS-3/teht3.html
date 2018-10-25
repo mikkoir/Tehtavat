@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 3</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+  'use strict';
+
+
+
+  let luku1, luku2, text,vuosi;
+  luku1 = prompt('Anna aloitusvuosi');
+  luku2 = prompt('Anna lopetusvuosi');
+
+  text = '<ul>';
+  for (vuosi = luku1; vuosi <= luku2; vuosi++) {
+    if(((vuosi % 4 == 0 && vuosi % 100 != 0)|| vuosi % 400 == 0 ) && vuosi != 4000){
+      text += '<li>' + vuosi +'</li>';
+    }
+  }
+
+  text += '</ul>';
+
+  document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>

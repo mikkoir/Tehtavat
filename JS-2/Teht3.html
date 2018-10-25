@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 3</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let hemo, suk;
+  let nainen = 'nainen', mies= 'mies';
+  suk = prompt('Anna sukupuolesi');
+  hemo = prompt('Anna hemoglobiiniarvo');
+
+
+  if (suk == nainen && hemo<=116){
+    document.write('<p>' + 'Hemoglobiini on alhainen'+ '</p>');
+  }
+
+  else if(suk == nainen && hemo>=117 && hemo<=175)
+  {
+    document.write('<p>' + 'Hemoglobiini on normaali' + '</p>');
+  }
+
+  else if(suk == nainen && hemo>=176)
+  {
+    document.write('<p>' + 'Hemoglobiini on liian korkea' + '</p>');
+  }
+
+  else if(suk == mies && hemo<=133)
+  {
+    document.write('<p>' + 'Hemoglobiini on alhainen' + '</p>');
+  }
+
+  else if(suk == mies && hemo>=134 && hemo<=195)
+  {
+    document.write('<p>' + 'Hemoglobiini on normaali' + '</p>');
+  }
+
+  else if(suk == mies && hemo>=196)
+  {
+    document.write('<p>' + 'Hemoglobiini on liian korkea' + '</p>');
+  }
+
+</script>
+</body>
+</html>

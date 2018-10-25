@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 1</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let luku,i,kertoma = 1;
+  luku = prompt('Anna luku. Ohjelma laskee luvun kertoman');
+
+
+  if(luku<0){
+    document.write('<p>'+ 'Ohjelma ei voi laskea kertomaa'+ '</p>');
+
+  }
+  else{
+    for(i = 1; i<=luku; i++){
+      kertoma = kertoma * i;
+    }
+    document.write('<p>'+ kertoma + '</p>');
+  }
+
+
+
+</script>
+</body>
+</html>

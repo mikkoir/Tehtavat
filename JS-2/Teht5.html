@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 5</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let nelio, kys,lasku;
+
+  kys = window.confirm("Lasketaanko neliöjuuri");
+
+  if(kys == true){
+    nelio = prompt('Anna luku');
+
+    if(nelio<0){
+      document.write('<p>' + 'Negatiivisen luvun neliöjuuri ei ole määritelty'+ '</p>');
+    }
+    else{
+      lasku = Math.sqrt(nelio);
+      document.write('<p>' + 'Luvun neliöjuuri on = '+ lasku + '</p>');
+    }
+  }
+  else{
+    document.write('<p>' + 'Neliöjuurta ei lasketa'+ '</p>');
+  }
+
+
+
+</script>
+</body>
+</html>
