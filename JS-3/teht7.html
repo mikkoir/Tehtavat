@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 7</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let i,num=0,arv,las;
+  
+  for(i = 1; i<=25; i++){
+    
+      num += 1;
+      arv = Math.floor(Math.random() * 4) + 1;
+      
+      switch(arv){
+        case 1:
+          las = 4*num-3;
+          document.write('<p>' + las + '</p>');
+          break;
+      }
+      switch(arv){
+        case 2:
+          las = 4*num-2;
+          document.write('<p>' + las + '</p>');
+          break;
+      }
+      switch(arv){
+        case 3:
+          las = 4*num-1;
+          document.write('<p>' + las + '</p>');
+          break;
+      }
+      switch(arv){
+        case 4:
+          las = 4*num;
+          document.write('<p>' + las + '</p>');
+          break;
+      }
+    
+    
+  }
+  
+</script>
+</body>
+</html>

@@ -7,10 +7,14 @@
 <body>
 <script>
   'use strict';
-  let luku;
+  let luku, i, summa = 0, noppa;
   luku = prompt('Montaako noppaa heitetään');
 
-
+  for (i = 0; i < luku; i++) {
+    noppa = Math.floor(Math.random() * 6) + 1;
+    summa = +summa + +noppa;
+  }
+  document.write('<p>' + 'Noppien summa = ' + summa + '</p>');
 </script>
 </body>
 </html>

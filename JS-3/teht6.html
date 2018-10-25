@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 6</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let noppa, luku, maara, i, yht = 0, lasku, kierros = 10000,summa, j;
+  maara = prompt('Anna noppien määrä');
+  luku = prompt('Anna noppien silmälukujen summa');
+
+  for (i = 1; i <= kierros; i++) {
+    summa = 0;
+    for (j = 1; j <= maara; j++) {
+      noppa = Math.floor(Math.random() * 6) + 1;
+      summa = +summa + +noppa;
+      if (summa == luku) {
+        yht +=1;
+      }
+    }
+  }
+  lasku = yht / kierros;
+  document.write('<p>' + lasku + '</p>');
+
+</script>
+</body>
+</html>

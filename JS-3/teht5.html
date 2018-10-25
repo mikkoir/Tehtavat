@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 5</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let luku, tulos = true, i;
+  luku = prompt('Anna luku');
+  for(i = 2; i <luku; i++){
+    if(luku% i ==0){
+      tulos = false;
+      break;
+    }
+
+  }
+  if(tulos == true){
+    alert(luku+ " Numerosi on alkuluku");
+  }
+  else{
+    alert(luku+ " Numerosi ei ole alkuluku")
+  }
+
+</script>
+</body>
+</html>
