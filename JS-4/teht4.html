@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 4</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let num, i =0;
+  let numerot = [];
+  do{
+    num = prompt('Anna luku');
+    numerot[i] = num;
+    i += 1;
+  }while(num != 0);
+
+  numerot.sort();
+  let t = numerot.reverse();
+
+  document.write('<p>' + t + '</p>');
+
+</script>
+</body>
+</html>

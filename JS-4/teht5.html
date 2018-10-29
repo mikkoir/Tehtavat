@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 5</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let num;
+  let numerot = [];
+  let bool = false;
+
+  do{
+    num = prompt('Anna luku 1-1000 väliltä');
+
+    if(numerot.includes(num)){
+      document.write('<p>' + "luku on jo annettu" + '</p>');
+      bool(true);
+    }else{
+      numerot.push(num);
+    }
+
+  }while(bool== false)
+
+</script>
+</body>
+</html>

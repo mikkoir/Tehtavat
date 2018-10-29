@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 2</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+  'use strict';
+  let num, i, j = 1,text,nimi;
+  let henk = [];
+
+  num = prompt('Anna henkilöiden määrä');
+
+  for (i = 0; i < num; i++) {
+    nimi = prompt('Anna nimi');
+    henk[i] = nimi;
+  }
+
+  text = '<ol>';
+  for(i=0; i<num;i++){
+    text +='<li>' + henk[i] + '</li>';
+  }
+  text += '</ol>';
+
+  document.getElementById("demo").innerHTML =text;
+</script>
+</body>
+</html>

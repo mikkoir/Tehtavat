@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 1</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let num, i, j = 1;
+  let numerot = [];
+  for (i = 0; i < 5; i++) {
+    num = prompt('Anna luku ' + j++);
+    numerot[i] = num;
+  }
+
+  let kaannos = numerot.reverse();
+  document.write('<p>' + kaannos + '</p>');
+
+</script>
+</body>
+</html>

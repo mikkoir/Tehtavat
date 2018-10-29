@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 6</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let num,m,bool=false,medi;
+  let numerot = [];
+
+  do {
+    num = prompt('Anna luku');
+
+    if(num !=0){
+      numerot.push(num);
+    }
+    else{
+      bool=true;
+    }
+
+  } while (bool==false);
+
+  function median(numerot) {
+    numerot.sort(function(a, b) {return a - b;});
+    let pituus = numerot.length;
+    if(pituus % 2){
+      return m =Math.floor(pituus/2);
+    }
+    else{
+      return m = Math.floor((pituus+1)/2);
+    }
+    return medi = numerot[m-1];
+  }
+
+
+  document.write('<p>' + median(numerot) + '</p>');
+
+
+
+
+
+</script>
+</body>
+</html>

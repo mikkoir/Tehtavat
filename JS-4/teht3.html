@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 3</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+  'use strict';
+  let i, text, nimi;
+  let dog = [];
+
+  for (i = 0; i < 6; i++) {
+    nimi = prompt('Anna koiran nimi');
+    dog[i] = nimi;
+  }
+
+  dog.sort();
+  dog.reverse();
+  text = '<ul>';
+  for (i = 0; i < 6; i++) {
+    text += '<li>' + dog[i] + '</li>';
+  }
+  text += '</ul>';
+
+  document.getElementById('demo').innerHTML = text;
+</script>
+</body>
+</html>
