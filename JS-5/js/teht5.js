@@ -1,5 +1,5 @@
 
-setInterval(timer, 10);
+setInterval(timer, 1000);
 
 function timer() {
   let d = new Date();
