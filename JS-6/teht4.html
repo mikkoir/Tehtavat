@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 4</title>
+</head>
+<body>
+<script>
+  let luku1,luku2,luku3;
+
+  luku1 = prompt("Anna luku 1.");
+  luku2 = prompt("Anna luku 2.");
+  luku3 = prompt("Anna luku 3.");
+
+  function suurin(luku1,luku2,luku3) {
+    let tulos = Math.max(luku1,luku2,luku3);
+    return tulos;
+  }
+  document.write('<p>'+ "Suurin luku on = " + suurin(luku1,luku2,luku3) + '</p>');
+</script>
+</body>
+</html>

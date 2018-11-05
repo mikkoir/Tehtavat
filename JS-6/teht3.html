@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 3</title>
+</head>
+<body>
+<script>
+  let num,luku;
+
+  num = prompt("Anna luku. Ohjelma kertoo luvun itseisarvon");
+  function itseisarvo(num) {
+    if (num == 0){
+      return num;
+    }else{
+      luku= num*(-1);
+      return luku;
+    }
+  }
+  document.write('<p>' + itseisarvo(num) + '</p>');
+</script>
+</body>
+</html>

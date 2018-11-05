@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 7</title>
+</head>
+<body>
+<script>
+  let lista=[2,3,0];
+  let i;
+  function parilliset(lista) {
+    let lista2=[];
+    for(i=0; i<lista.length; i++){
+      if(lista[i]%2 === 0){
+        lista2.push(lista[i]);
+      }
+    }
+    return lista2;
+  }
+  document.write('<p>'+parilliset(lista)+'</p>');
+</script>
+</body>
+</html>
