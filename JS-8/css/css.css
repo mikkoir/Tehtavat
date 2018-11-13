@@ -1,0 +1,51 @@
+#app{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+body{
+    background-color: black;
+}
+p{
+    color: white;
+    text-align: left;
+}
+span{
+    color: white;
+
+}
+h5{
+    color:white;
+}
+
+.inputField{
+    width: 400px;
+    height: 30px;
+}
+input{
+    font-size: 25px;
+}
+button{
+    height: 37px;
+    font-size: 25px;
+    background-color: white;
+}
+#lista{
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3%;
+    border-style: solid;
+    border-color: #2ba6cb;
+
+}
+#tex{
+    border-style: solid;
+    border-color: red;
+    width: 400px;
+
+}
+img{
+    padding-left:23%;
+
+}
