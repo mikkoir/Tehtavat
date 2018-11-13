@@ -15,19 +15,41 @@
     <li id="berry">Strawberry</li>
 </ul>
 
-
 <script>
+  //1.
+  let berry = document.getElementById('berry');
+  console.log(berry);
+  console.log('I found the berry: ' + berry.innerHTML);
+  document.getElementsByTagName('li')[5].style.backgroundColor = 'red';
+  //2
+  let orange = document.querySelector('li:nth-child(3)');
+  console.log(orange);
+  console.log('I found the fruit: ' + orange.innerHTML);
+  document.getElementsByTagName('li')[2].style.backgroundColor = 'orange';
+  //3.1
+  let x = document.getElementsByTagName('li');
+  l = x.length;
+  console.log(x);
+  //3.2
+  console.log('Using the for loop here:');
+  for (i = 0; i < l; i++) {
+    console.log(x[i].innerHTML);
+    //x[3].style.backgroundColor = 'green';
+    if(x[i].innerHTML === "Pear"){
+      x[i].style.backgroundColor = 'green';
+    }
+    x[i].style.width = '100px';
+    x[i].style.listStyleType = 'none';
 
-document.getElementById('berry').innerHTML = "I found the berry: Strawberry";
-document.getElementsByTagName('li')[5].style.backgroundColor = "red";
-
-let orange = document.querySelector('li:nth-child(3)');
-    orange.innerHTML = "I found the fruit: Orange";
-document.getElementsByTagName('li')[2].style.backgroundColor = "orange";
-
-
-let col = document.getElementsByTagName('li').namedItem("li");
-console.log(col);
+  }
+  //4.1
+  let all = document.querySelectorAll('li');
+  console.log(all);
+  //4.2
+    all.forEach(function(element) {
+      console.log(element.innerHTML);
+      element.style.borderStyle = 'solid';
+    });
 </script>
 </body>
 </html>
