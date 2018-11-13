@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul class="fruits">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li data-foodtype="squishy">Orange</li>
+    <li>Pear</li>
+    <li>Kiwi</li>
+    <li id="berry">Strawberry</li>
+</ul>
+
+
+<script>
+
+document.getElementById('berry').innerHTML = "I found the berry: Strawberry";
+document.getElementsByTagName('li')[5].style.backgroundColor = "red";
+
+let orange = document.querySelector('li:nth-child(3)');
+    orange.innerHTML = "I found the fruit: Orange";
+document.getElementsByTagName('li')[2].style.backgroundColor = "orange";
+
+
+let col = document.getElementsByTagName('li').namedItem("li");
+console.log(col);
+</script>
+</body>
+</html>
