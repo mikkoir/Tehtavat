@@ -1,13 +1,17 @@
 
 function haku ({}) {
   const haku = document.getElementById("haku").value;
+
   fetch(`https://api.tvmaze.com/search/shows?q=${haku}`)
   .then(vastaus => vastaus.json())
   .then(sarjat => {
+    console.log(sarjat);
     const app = document.getElementById('app');
     app.innerHTML = sarjat.map(({ show }) => `
           <div id ="lista" class=" movie-content">
+          <div id= "kuva">
             ${show.image ? `<img src="${show.image.medium}">`:''}
+           </div>
             <div id = "tex" class="movie-info">
               <h5>${show.name}</h5>
               <span>Homepage: <a href="${show.url}">${show.url}</a></span>
@@ -18,6 +22,7 @@ function haku ({}) {
             </div>
           </div>
         `).join('');
+
   });
 }
 

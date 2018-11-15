@@ -2,6 +2,26 @@
     display: flex;
     flex-wrap: wrap;
     align-content: space-evenly;
+    padding-top: 50px;
+    justify-content: center;
+}
+h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: "Arial";
+}
+h5{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding: -50px;
+}
+span{
+    font-family: Arial;
+}
+a{
+    color: lightskyblue;
 }
 body{
     background-color: black;
@@ -17,7 +37,11 @@ span{
 h5{
     color:white;
 }
-
+.search{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
 .inputField{
     width: 400px;
     height: 30px;
@@ -26,26 +50,31 @@ input{
     font-size: 25px;
 }
 button{
-    height: 37px;
-    font-size: 25px;
-    background-color: white;
+    font-size: 26px;
+    background-color: ghostwhite;
+    border: none;
 }
 #lista{
-
+    background-image: radial-gradient(#1a1a1a,black);
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 3%;
-    border-style: solid;
-    border-color: #2ba6cb;
 
 }
 #tex{
-    border-style: solid;
-    border-color: red;
     width: 400px;
-
 }
 img{
-    padding-left:23%;
-
+    padding-left:40%;
+}
+#kuva{
+    padding: 15px;
+    height: 295px;
+    width: 210px;
+}
+#hakutulos{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
 }
